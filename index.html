@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Karta Kontrolera EV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .header {
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 15px;
+    }
+    .label {
+      font-weight: bold;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 5px;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+    .input {
+      border: 1px solid #ccc;
+      padding: 6px;
+      width: 100%;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">Karta Kontrolera Pojazdu Elektrycznego</div>
+    
+    <div class="section">
+      <div class="label">Imię i nazwisko:</div>
+      <div>Kamil Krzyżanowski</div>
+    </div>
+    <div class="section">
+      <div class="label">PESEL:</div>
+      <div>37592286026</div>
+    </div>
+    <div class="section">
+      <div class="label">Data urodzenia:</div>
+      <div>10.02.2007</div>
+    </div>
+    <div class="section">
+      <div class="label">Zdjęcie:</div>
+      <img src="photo.jpg" alt="Zdjęcie użytkownika">
+    </div>
+
+    <hr>
+
+    <div class="section">
+      <div class="label">Marka pojazdu:</div>
+      <div>Kukirin G4</div>
+    </div>
+    <div class="section">
+      <div class="label">Kontroler:</div>
+      <div>wersja kontrola pojazdów elektrycznych 1x3000W</div>
+    </div>
+    <div class="section">
+      <div class="label">Numer kontrolera:</div>
+      <input class="input" placeholder="Wpisz numer (np. ESC-007)" />
+    </div>
+    <div class="section">
+      <div class="label">Moc nominalna:</div>
+      <input class="input" placeholder="W (np. 3000W)" />
+    </div>
+    <div class="section">
+      <div class="label">Prędkość maksymalna:</div>
+      <input class="input" placeholder="km/h (np. 70)" />
+    </div>
+    <div class="section">
+      <div class="label">Stan baterii:</div>
+      <input class="input" placeholder="np. 76%" />
+    </div>
+    <div class="section">
+      <div class="label">Błędy / ostrzeżenia:</div>
+      <input class="input" placeholder="np. Error 21: czujnik manetki" />
+    </div>
+
+  </div>
+</body>
+</html>
